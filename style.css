@@ -85,3 +85,21 @@ section {
         }
 }
 
+/****** about me ******/
+.portrait {
+        border-radius: 50%;
+        max-width: 300px;
+        width: 100%;
+        margin: auto;
+        display: block;
+}
+
+@media all and (min-width: 500px) {
+        #about-me{
+                overflow: hidden; /* So parent will grow to fit floated image */
+        }
+        .portrait {
+                float: right;
+                margin-left: 1em;
+        }
+}
