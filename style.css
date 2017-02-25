@@ -29,7 +29,7 @@ section {
 
 @media all and (min-width: 800px) {
         main {
-                width: 80%;
+                width: 60%;
                 margin: auto;
                 max-width: 1200px;
         }
@@ -139,16 +139,31 @@ figcaption {
         align-items: center;
         padding: 0 1em;
 }
-figcaption a {
+.info {
         line-height: 3em;
+        color: #dfdfdf;
 }
 figcaption i {
         vertical-align: middle;
-        color: #dfdfdf;
 }
 figcaption i:hover {
-        color: #f7f7f7;
         cursor: pointer;
+}
+.overlay {
+        padding: 0.5em;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #415b59;
+        opacity: 0.95;
+        color: #f7f7f7;
+        display: none;
+        bottom: 0;
+        right: 0;
+}
+.info-color {
+        color: #415b59;
+        opacity: 0.95;
 }
 
 @media all and (min-width: 500px) {

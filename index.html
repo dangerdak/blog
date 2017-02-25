@@ -5,6 +5,11 @@
     <link href="normalize.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/025a404d30.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="main.js"></script>
   </head>
   <body>
     <header>
@@ -25,20 +30,32 @@
       <section id="portfolio" class="flex-row">
         <h2>Portfolio</h2>
         <figure class="flex-cell">
+          <div id="overlay-quiz" class="overlay">
+            <p>A single-page Javascript quiz on the world's capital cities</p>
+          </div>
           <img src="https://c1.staticflickr.com/1/734/31695063154_60a8a7e5fe_o.jpg" />
-          <figcaption><p>Capital cities quiz</p> <a href="#"><i class="fa-2x fa fa-info-circle"></i></a></figcaption>
+          <figcaption>Capital cities quiz <span class="info" id="info-quiz"><i class="fa-2x fa fa-info-circle"></i></span></figcaption>
         </figure>
         <figure class="flex-cell">
+          <div id="overlay-chrappy" class="overlay">
+            <p>An (unpolished, unfinished) Secret Santa website built with django. Successfully used once by my family! No longer live as it needs lots of work.</p>
+          </div>
           <img src="https://c1.staticflickr.com/3/2863/32722613150_f02c8277af_o.png" />
-          <figcaption>chrAppy - Secret Santa app <a href="#"><i class="fa-2x fa fa-info-circle"></i></a></figcaption>
+          <figcaption>chrAppy - Secret Santa app <span class="info" id="info-chrappy"><i class="fa-2x fa fa-info-circle"></i></span></figcaption>
         </figure>
         <figure class="flex-cell">
+          <div id="overlay-tribute" class="overlay">
+             <p>A simple tribute page made using only HTML and CSS.</p>
+          </div>
           <img src="https://c2.staticflickr.com/4/3954/32725065680_911f4d669f_o.jpg" />
-          <figcaption>Tribute page <a href="#"><i class="fa-2x fa fa-info-circle"></i></a></figcaption>
+          <figcaption>Tribute page <span class="info" id="info-tribute"><i class="fa-2x fa fa-info-circle"></i></span></figcaption>
         </figure>
         <figure class="flex-cell">
+          <div id="overlay-physics" class="overlay">
+            <p>C++: Modelling single and double pendula. Implemented Markov Chain Monte Carlo for a toy problem. Astronomical image processing with Matlab.</p>
+          </div>
           <img src="https://c1.staticflickr.com/3/2782/32722781930_c9855f8905_b.jpg" />
-          <figcaption>Computational physics projects <a href="#"><i class="fa-2x fa fa-info-circle"></i></a></figcaption>
+          <figcaption>Computational physics projects <span class="info" id="info-physics"><i class="fa-2x fa fa-info-circle"></i></span></figcaption>
         </figure>
       </section>
       <section id="contact">
