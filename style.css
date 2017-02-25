@@ -14,13 +14,6 @@ main {
 section {
         margin-top: 2em;
 }
-.flex-row {
-        display: flex;
-        flex-flow: row wrap;
-}
-.flex-cell {
-        flex-basis: 100%;
-}
 
 @media all and (min-width: 500px) {
         section {
@@ -29,6 +22,11 @@ section {
 }
 
 @media all and (min-width: 800px) {
+        main {
+                width: 80%;
+                margin: auto;
+                max-width: 1200px;
+        }
         section {
                 margin-top: 6em;
         }
@@ -102,4 +100,29 @@ section {
                 float: right;
                 margin-left: 1em;
         }
+}
+
+/****** portfolio ******/
+.flex-row {
+        display: flex;
+        flex-flow: row wrap;
+}
+.flex-cell {
+        flex-basis: 100%;
+}
+@media all and (min-width: 500px) {
+}
+@media all and (min-width: 800px) {
+}
+
+/****** contact ******/
+@media all and (min-width: 500px) {
+}
+@media all and (min-width: 800px) {
+}
+
+/****** footer ******/
+@media all and (min-width: 500px) {
+}
+@media all and (min-width: 800px) {
 }
