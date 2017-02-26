@@ -21,4 +21,14 @@ $(document).ready(function() {
     menuItems.removeClass('current');
     menuItem.addClass('current');
   });
+
+  $('.nav-main a').click(function(el) {
+    var id = $(this).attr('href').slice(1);
+    var offset = $('#' + id).offset().top;
+    $('html, body').animate({
+      scrollTop: offset
+    }, 200);
+    return false;
+  });
+
 })
