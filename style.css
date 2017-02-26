@@ -20,6 +20,9 @@ main {
 section {
         padding-top: 2em;
 }
+h2 {
+        margin-bottom: 1em;
+}
 
 @media all and (min-width: 500px) {
         section {
@@ -73,6 +76,9 @@ section {
         .btn {
                 padding: 1.2em;
         }
+        #about-me { /* Fixes spacing between navbar and about me*/
+                margin-top: 2.4em;
+        }
         .nav-main {
                 position: fixed;
                 top: 0;
@@ -124,10 +130,13 @@ figure {
         width: 100%;
         min-width: 300px;
         max-width: 500px;
-        margin-top: 1em;
         border: 5px solid #f7f7f7;
         position: relative;
         z-index: 0;
+        margin-bottom: 4em;
+}
+section:last-child { /* Fixes spacing at end of portfolio */
+        margin-top: -4em;
 }
 figure img {
         width: 100%;
