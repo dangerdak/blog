@@ -82,7 +82,10 @@ section {
 }
 
 @media all and (min-width: 800px) {
-        .navbar {
+        .nav-main {
+                justify-content: flex-start;
+        }
+        .nav-bottom {
                 justify-content: flex-end;
         }
         .navbar li {
@@ -167,9 +170,6 @@ figcaption i:hover {
 }
 
 @media all and (min-width: 500px) {
-        figure {
-                margin-top: 2em;
-        }
 }
 @media all and (min-width: 800px) {
         .flex-row {
@@ -177,9 +177,6 @@ figcaption i:hover {
         }
         .flex-cell {
                 width: 48%;
-        }
-        figure {
-                margin-top: 4em;
         }
 }
 
