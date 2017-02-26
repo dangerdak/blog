@@ -95,6 +95,11 @@ h2 {
                 width: 100%;
                 z-index: 1;
         }
+        /* Highlighting for current section */
+        .current {
+                background-color: #fff;
+                pointer-events: none;
+        }
 }
 
 @media all and (min-width: 800px) {
@@ -172,6 +177,7 @@ figcaption i {
 }
 figcaption i:hover {
         cursor: pointer;
+        color: #415b59;
 }
 .overlay {
         padding: 0.5em;
@@ -219,3 +225,4 @@ figcaption i:hover {
                 margin: auto;
         }
 }
+
