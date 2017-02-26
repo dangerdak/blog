@@ -20,6 +20,9 @@ main {
 section {
         padding-top: 2em;
 }
+section:last-child {
+        padding-bottom: 2em;
+}
 h2 {
         margin-bottom: 1em;
 }
@@ -27,6 +30,9 @@ h2 {
 @media all and (min-width: 500px) {
         section {
                 padding-top: 4em;
+        }
+        section:last-child {
+                padding-bottom: 4em;
         }
 }
 
@@ -38,6 +44,9 @@ h2 {
         }
         section {
                 padding-top: 6em;
+        }
+        section:last-child {
+                padding-bottom: 6em;
         }
 }
 
@@ -76,10 +85,11 @@ h2 {
         .btn {
                 padding: 1.2em;
         }
-        #about-me { /* Fixes spacing between navbar and about me*/
-                margin-top: 2.4em;
+        section:first-child { /* Fixes spacing between navbar and first child*/
+                margin-top: 3.4em;
         }
-        .nav-main {
+        header {
+                background: #f7f7f7;
                 position: fixed;
                 top: 0;
                 width: 100%;
@@ -90,6 +100,8 @@ h2 {
 @media all and (min-width: 800px) {
         .nav-main {
                 justify-content: flex-start;
+                width: 60%;
+                margin: auto;
         }
         .nav-bottom {
                 justify-content: flex-end;
@@ -199,4 +211,11 @@ figcaption i:hover {
 @media all and (min-width: 500px) {
 }
 @media all and (min-width: 800px) {
+        footer {
+                background: #f7f7f7;
+        }
+        .nav-bottom {
+                width: 60%;
+                margin: auto;
+        }
 }
