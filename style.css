@@ -208,9 +208,29 @@ figcaption i:hover {
 }
 
 /****** contact ******/
+h2, label {
+  flex-basis: 100%;
+}
+
+button {
+  flex-basis: 50%;
+  min-width: 200px;
+}
+
+input, textarea {
+  width: 100%;
+}
+
 @media all and (min-width: 500px) {
+  form {
+    max-width: 400px;
+  }
+
 }
 @media all and (min-width: 800px) {
+  form {
+    max-width: 500px;
+  }
 }
 
 /****** footer ******/

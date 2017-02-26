@@ -15,7 +15,7 @@
     <header>
       <nav>
         <ul class="navbar nav-main">
-          <li><a class="btn" href="#about-me"><i class="fa fa-user-o"></i> About Me</a></li>
+          <li><a class="btn current" href="#about-me"><i class="fa fa-user-o"></i> About Me</a></li>
           <li><a class="btn" href="#portfolio"><i class="fa fa-folder-open-o"></i> Portfolio</a></li>
           <li><a class="btn" href="#contact"><i class="fa fa-envelope-o"></i> Contact</a></li>
         </ul>
@@ -60,6 +60,15 @@
       </section>
       <section id="contact" class="last-section">
         <h2>Get in touch</h2>
+        <form action="" method="post" class="sub-flex-row">
+          <label for="name">Name
+          <input type="text" name="name" placeholder="Name" required></label>
+          <label for="email">E-mail
+          <input type="email" name="email" placeholder="Email" required></label>
+          <label for="message">Message</label>
+          <textarea rows="5" name="message" placeholder="Message" required></textarea></label>
+          <button class="btn" name="submit"><i class="fa fa-send-o"></i> Send</button>
+        </form>
       </section>
     </main>
     <footer>
