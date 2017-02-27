@@ -1,7 +1,7 @@
 $(document).ready(function() {
-  $('.info').each(function(element) {
+  $('.info').each(function() {
     $(this).click(function() {
-      $(this).parent().prev().prev().toggle('slow');
+      $(this).parent().prev().prev().stop().toggle('slow');
       $(this).toggleClass('info-color');
     });
   });
