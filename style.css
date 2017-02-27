@@ -129,11 +129,18 @@ h1, h2 {
 }
 
 /****** about me ******/
+.about-me p:first-of-type {
+        font-size: 1.2em;
+}
+.about-me p {
+        margin-bottom: 1em;
+}
 .portrait {
         border-radius: 50%;
         max-width: 300px;
         width: 100%;
         margin: auto;
+        margin-bottom: 1em;
         display: block;
 }
 
