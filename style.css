@@ -97,6 +97,7 @@ h1, h2 {
                 top: 0;
                 width: 100%;
                 z-index: 1;
+                border-bottom: 2px solid #2bb353;
         }
         /* Highlighting for current section */
         .current {
@@ -110,12 +111,20 @@ h1, h2 {
                 justify-content: flex-start;
                 width: 60%;
                 margin: auto;
+                font-weight: bold;
         }
         .nav-bottom {
                 justify-content: flex-end;
         }
         .navbar li {
-                flex: 0 0 auto;
+                flex: 0 1 auto;
+                max-width: 33%;
+        }
+        .btn {
+                padding: 2em;
+        }
+        section:first-child { /* Fixes spacing between navbar and first child*/
+                margin-top: 5em;
         }
 }
 
@@ -159,7 +168,8 @@ section:last-child { /* Fixes spacing at end of portfolio */
         margin-top: -4em;
 }
 figure img {
-        width: 100%;
+        width: 90%;
+        margin: 5%;
 }
 figcaption {
         background: #fff;
