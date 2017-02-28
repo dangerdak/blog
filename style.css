@@ -29,9 +29,12 @@ section:last-child {
 h1, h2 {
         margin-bottom: 1em;
 }
-a {
+main a {
         color: #2bb353;
         text-decoration: none;
+}
+main a:hover {
+        color: #4ae383;
 }
 
 @media all and (min-width: 500px) {
