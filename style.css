@@ -35,6 +35,7 @@ main a {
 }
 main a:hover {
         color: #4ae383;
+        text-decoration: underline;
 }
 
 @media all and (min-width: 500px) {
@@ -68,7 +69,7 @@ main a:hover {
         
         padding: 0;
         margin: 0;
-        background: #f7f7f7;
+        background: #fff;
         list-style-type: none;
 }
 .navbar li {
@@ -77,12 +78,13 @@ main a:hover {
 .btn {
         text-decoration: none;
         color: #415b59;
-        background: #f7f7f7;
         padding: 0.8em;
         display: block;
+        border-top: 2px solid #fff;
 }
 .btn:hover {
-        background-color: #dfdfdf;
+        border-top: 2px solid #4ae383;
+        color: #2bb353;
 }
 
 @media all and (min-width: 500px) {
@@ -99,16 +101,17 @@ main a:hover {
                 margin-top: 3.4em;
         }
         header {
-                background: #f7f7f7;
+                background: #fff;
                 position: fixed;
                 top: 0;
                 width: 100%;
                 z-index: 1;
-                border-bottom: 2px solid #2bb353;
+                border-bottom: 8px solid #2bb353;
         }
         /* Highlighting for current section */
         .current {
                 background-color: #fff;
+                border-top: 2px solid #2bb353;
                 pointer-events: none;
         }
 }
@@ -245,7 +248,7 @@ figcaption i:hover {
 }
 @media all and (min-width: 800px) {
         footer {
-                background: #f7f7f7;
+                background: #fff;
         }
         .nav-bottom {
                 width: 60%;
