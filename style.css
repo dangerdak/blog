@@ -98,20 +98,25 @@ header {
                 padding: 1.2em;
                 border-top: 4px solid #fff;
                 -webkit-transition: all 0.3s;
-                transition: all 0.3s;
+                transition: all 0.2s;
         }
         .btn:hover {
                 border-color: #4ae383;
         }
-        section:first-child { /* Fixes spacing between navbar and first child*/
-                margin-top: 3.4em;
-        }
         header {
-                position: fixed;
-                top: 0;
                 width: 100%;
                 z-index: 1;
                 border-bottom: 8px solid #2bb353;
+                transition: all 0.1s;
+                position: fixed;
+                top: 0;
+                height: 6em;
+        }
+        .nav-reduce {
+                height: 4em;
+        }
+        .nav-reduce .btn {
+                padding: 1.2em;
         }
         /* Highlighting for current section */
         .current {

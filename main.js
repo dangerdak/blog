@@ -16,6 +16,7 @@ $(document).ready(function() {
     var cutoff = $(window).scrollTop() + menuHeight - 5;
     var nearEnd = 
       $(window).scrollTop() + $(window).height() > $(document).height() - 100;
+    var nearTop = $(document).scrollTop() < 30;
     var currentSection = sections.filter(function() {
       return $(this).offset().top < cutoff + $(window).height() / 4;
     }).last();
@@ -27,6 +28,13 @@ $(document).ready(function() {
     else {
       menuItem.addClass('current');
     }
+    if (!nearTop) {
+      $('header').addClass('nav-reduce');
+    }
+    else {
+      $('header').removeClass('nav-reduce');
+    }
+
   });
 
   $('.nav-main a').click(function(el) {
