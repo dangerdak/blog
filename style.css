@@ -62,6 +62,9 @@ main a:hover {
 }
 
 /****** navigation ******/
+header {
+        background-color: #fff;
+}
 .navbar {
         display: flex;
         flex-direction: column;
@@ -69,7 +72,6 @@ main a:hover {
         
         padding: 0;
         margin: 0;
-        background: #fff;
         list-style-type: none;
 }
 .navbar li {
@@ -80,10 +82,8 @@ main a:hover {
         color: #415b59;
         padding: 0.8em;
         display: block;
-        border-top: 2px solid #fff;
 }
 .btn:hover {
-        border-top: 2px solid #4ae383;
         color: #2bb353;
 }
 
@@ -96,12 +96,17 @@ main a:hover {
         }
         .btn {
                 padding: 1.2em;
+                border-top: 4px solid #fff;
+                -webkit-transition: all 0.3s;
+                transition: all 0.3s;
+        }
+        .btn:hover {
+                border-color: #4ae383;
         }
         section:first-child { /* Fixes spacing between navbar and first child*/
                 margin-top: 3.4em;
         }
         header {
-                background: #fff;
                 position: fixed;
                 top: 0;
                 width: 100%;
@@ -110,8 +115,7 @@ main a:hover {
         }
         /* Highlighting for current section */
         .current {
-                background-color: #fff;
-                border-top: 2px solid #2bb353;
+                border-color: #2bb353;
                 pointer-events: none;
         }
 }
@@ -248,7 +252,6 @@ figcaption i:hover {
 }
 @media all and (min-width: 800px) {
         footer {
-                background: #fff;
         }
         .nav-bottom {
                 width: 60%;
