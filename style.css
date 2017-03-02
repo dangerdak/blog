@@ -110,7 +110,10 @@ header {
                 transition: all 0.1s;
                 position: fixed;
                 top: 0;
-                height: 6em;
+                height: 4em;
+        }
+        section:first-child { /* Fixes spacing between navbar and first child*/
+                margin-top: 3.4em;
         }
         .nav-reduce {
                 height: 4em;
@@ -126,6 +129,9 @@ header {
 }
 
 @media all and (min-width: 800px) {
+        header {
+                height: 6em;
+        }
         .nav-main {
                 justify-content: flex-start;
                 width: 60%;
