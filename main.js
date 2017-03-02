@@ -14,12 +14,19 @@ $(document).ready(function() {
   var menuHeight = $('.nav-main').outerHeight();
   $(document).scroll(function() {
     var cutoff = $(window).scrollTop() + menuHeight - 5;
+    var nearEnd = 
+      $(window).scrollTop() + $(window).height() > $(document).height() - 100;
     var currentSection = sections.filter(function() {
       return $(this).offset().top < cutoff + $(window).height() / 4;
     }).last();
     var menuItem = $('a[href="#' + currentSection.attr('id') + '"]');
     menuItems.removeClass('current');
-    menuItem.addClass('current');
+    if (nearEnd) {
+      $('.nav-main .btn').last().addClass('current');
+    }
+    else {
+      menuItem.addClass('current');
+    }
   });
 
   $('.nav-main a').click(function(el) {
