@@ -186,7 +186,7 @@ figure {
         width: 100%;
         min-width: 150px;
         max-width: 400px;
-        border: 1px dashed $info-light;
+        border: 1px dashed $info-dark;
         position: relative;
         z-index: 0;
         margin-bottom: 1em;
@@ -207,14 +207,15 @@ figcaption {
         justify-content: space-between;
         align-items: center;
         padding: 0.5em 1em;
-        border-top: 1px dashed $info-light;
+        border-top: 1px dashed $info-dark;
 }
 .info {
         line-height: 3em;
-        color: $info-highlight;
+        color: $info-light;
 }
 figcaption i {
         vertical-align: middle;
+        color: $info-dark;
 }
 figcaption i:hover {
         cursor: pointer;
@@ -227,7 +228,7 @@ figcaption i:hover {
         height: 100%;
         background-color: $button-color;
         opacity: 0.95;
-        color: $info-highlight;
+        color: $info-light;
         display: none;
         bottom: 0;
         right: 0;
