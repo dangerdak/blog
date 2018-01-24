@@ -409,7 +409,8 @@ template {
   box-sizing: border-box; }
 
 ul {
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 h1, h2, p, figure {
   margin: 0;
@@ -438,13 +439,13 @@ main a:hover {
   text-decoration: underline; }
 
 .page {
-  padding-top: 2em; }
+  padding-top: 2em;
+  padding-bottom: 2em; }
 
 @media all and (min-width: 600px) {
   main {
     margin: 0 3em;
     padding-top: 4em;
-    padding-bottom: 0;
     min-height: 100vh; } }
 @media all and (min-width: 960px) {
   main {
@@ -531,6 +532,17 @@ header {
 
   .btn {
     padding: 2em; } }
+/****** blog ******/
+.post-list {
+  list-style: none; }
+
+.post-list__item {
+  padding: 1em 0;
+  font-size: 1.5rem; }
+
+.post-list__date {
+  font-size: 0.8em; }
+
 /****** about me ******/
 .about-me p:first-of-type {
   font-size: 1.2em; }
@@ -650,10 +662,6 @@ footer .btn {
 
 .nav-bottom li {
   flex: 0 1 auto; }
-
-.portfolio, .contact {
-  /* makes space for the footer */
-  margin-bottom: 3rem; }
 
 @media all and (min-width: 600px) {
   .nav-bottom {
