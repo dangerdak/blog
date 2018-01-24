@@ -9,10 +9,6 @@
 *:before {
         box-sizing: border-box;
 }
-ul {
-    margin: 0;
-    padding: 0;
-}
 h1, h2, p, figure {
         margin: 0;
         display: block;
@@ -151,6 +147,8 @@ header {
 /****** blog ******/
 .post-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 .post-list__item {
     padding: 1em 0;
