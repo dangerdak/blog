@@ -1,3 +1,6 @@
+---
+---
+
 @import 'normalize';
 @import 'variables';
 
@@ -20,12 +23,7 @@ h1, h2, h3, h4, h5 ,h6 {
 }
 main {
         margin: 0 1em;
-}
-section {
         min-height: 100vh;
-}
-section:last-child {
-        min-height: 50vh;
 }
 h1, h2 {
         margin-bottom: 1em;
@@ -44,11 +42,6 @@ main a:hover {
             margin: 0 3em;
             padding-top: 6em;
     }
-    #about-me {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
 }
 
 @media all and (min-width: 960px) {
@@ -56,6 +49,7 @@ main a:hover {
                 width: 60%;
                 margin: auto;
                 max-width: 1200px;
+                padding-top: 8em;
         }
 }
 
@@ -163,8 +157,11 @@ header {
 }
 
 @media all and (min-width: 600px) {
-        #about-me{
+        .about-me{
                 overflow: hidden; /* So parent will grow to fit floated image */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
         }
         .portrait {
                 float: right;
