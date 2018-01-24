@@ -1,28 +1,29 @@
 <!DOCTYPE html>
   <head>
-    <title>{{ page.title }} - {{ site.title }}</title>
+    <title>My First Post - dangerdak.com</title>
     <meta name="viewport" content="width=device-width">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
-    <link href={{ "/css/main.css" | absolute_url }} rel="stylesheet">
+    <link href=http://localhost:4000/css/main.css rel="stylesheet">
     <script src="https://use.fontawesome.com/025a404d30.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.1.1.min.js"
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
       crossorigin="anonymous"></script>
-    <script src={{ "/main.js" | absolute_url }}></script>
+    <script src=http://localhost:4000/main.js></script>
   </head>
   <body>
     <header>
       <nav>
         <ul class="navbar nav-main">
-          <li><a class="btn" href={{ "/about" | absolute_url }}><i class="fa fa-user-o"></i> About Me</a></li>
-          <li><a class="btn" href={{ "/portfolio" | absolute_url }}><i class="fa fa-folder-open-o"></i> Portfolio</a></li>
-          <li><a class="btn" href={{ "/contact" | absolute_url }}><i class="fa fa-envelope-o"></i> Contact</a></li>
+          <li><a class="btn" href=http://localhost:4000/about><i class="fa fa-user-o"></i> About Me</a></li>
+          <li><a class="btn" href=http://localhost:4000/portfolio><i class="fa fa-folder-open-o"></i> Portfolio</a></li>
+          <li><a class="btn" href=http://localhost:4000/contact><i class="fa fa-envelope-o"></i> Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      {{ content }}
+      <p>Some sample content 1…</p>
+
     </main>
     <footer>
       <ul class="nav-bottom navbar">

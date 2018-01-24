@@ -17,13 +17,14 @@ h1, h2, p, figure {
 body {
         font-family: 'Raleway', sans-serif;
         font-size: 1.2em;
+        position: relative;
 }
 h1, h2, h3, h4, h5 ,h6 {
         font-family: 'Playfair Display', serif;
 }
 main {
         margin: 0 1em;
-        min-height: 100vh;
+        display: flex;
 }
 h1, h2 {
         margin-bottom: 1em;
@@ -36,11 +37,19 @@ main a:hover {
         color: $main-light;
         text-decoration: underline;
 }
+.page {
+    padding-top: 2em;
+}
 
 @media all and (min-width: 600px) {
     main {
             margin: 0 3em;
-            padding-top: 6em;
+            padding-top: 4em;
+            padding-bottom: 0;
+            min-height: 100vh;
+    }
+    .page.about-me {
+        padding-top: 0;
     }
 }
 
@@ -49,7 +58,9 @@ main a:hover {
                 width: 60%;
                 margin: auto;
                 max-width: 1200px;
-                padding-top: 8em;
+        }
+        main {
+                padding-top: 6em;
         }
 }
 
@@ -157,11 +168,14 @@ header {
 }
 
 @media all and (min-width: 600px) {
-        .about-me{
+        .about-me {
                 overflow: hidden; /* So parent will grow to fit floated image */
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+        }
+        main {
+            display: flex;
         }
         .portrait {
                 float: right;
@@ -179,12 +193,15 @@ header {
 }
 figure {
         width: 100%;
-        min-width: 300px;
+        min-width: 150px;
         max-width: 600px;
         border: 5px solid $info-light;
         position: relative;
         z-index: 0;
-        margin-bottom: 4em;
+        margin-bottom: 1em;
+}
+figure:last-of-type {
+    margin-bottom: 0em;
 }
 figure img {
         width: 90%;
@@ -235,6 +252,9 @@ figcaption i:hover {
         .flex-cell {
                 width: 48%;
         }
+        figure:last-of-type {
+            margin-bottom: 1em;
+        }
 }
 @media all and (min-width: 960px) {
         .flex-row {
@@ -252,14 +272,43 @@ figcaption i:hover {
 }
 
 /****** footer ******/
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+footer .btn {
+    padding: 0.4em;
+}
+.nav-bottom {
+        flex-flow: row wrap;
+        justify-content: center;
+}
+.nav-bottom li {
+        flex: 0 1 auto;
+}
+.portfolio, .contact { /* makes space for the footer */
+    margin-bottom: 3rem;
+}
 @media all and (min-width: 600px) {
+    .nav-bottom {
+        justify-content: space-between;
+    }
+    .nav-bottom li {
+            flex: 1 1 auto;
+    }
 }
 @media all and (min-width: 960px) {
-        footer {
-        }
         .nav-bottom {
                 width: 60%;
                 margin: auto;
+        }
+        .nav-bottom {
+            justify-content: flex-end;
+        }
+        .nav-bottom li {
+                flex: 0 1 auto;
         }
 }
 
