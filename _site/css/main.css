@@ -408,6 +408,9 @@ template {
 *:before {
   box-sizing: border-box; }
 
+ul {
+  margin: 0; }
+
 h1, h2, p, figure {
   margin: 0;
   display: block;
@@ -448,10 +451,7 @@ main a:hover {
     margin: 0 3em;
     padding-top: 4em;
     padding-bottom: 0;
-    min-height: 100vh; }
-
-  .page.about-me {
-    padding-top: 0; } }
+    min-height: 100vh; } }
 @media all and (min-width: 960px) {
   main {
     width: 60%;
@@ -533,8 +533,7 @@ header {
     justify-content: flex-end; }
 
   .navbar li {
-    flex: 0 1 auto;
-    max-width: 25%; }
+    flex: 1 1 auto; }
 
   .btn {
     padding: 2em; } }
@@ -556,13 +555,7 @@ header {
 @media all and (min-width: 600px) {
   .about-me {
     overflow: hidden;
-    /* So parent will grow to fit floated image */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-
-  main {
-    display: flex; }
+    /* So parent will grow to fit floated image */ }
 
   .portrait {
     float: right;
