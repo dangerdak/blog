@@ -1,1 +1,9 @@
+url: localhost:4000
 name: My Jekyll Website
+title: dangerdak.com
+markdown: kramdown
+kramdown:
+    input: GFM
+    auto_ids: true
+    hard_wrap: false
+    syntax_highlighter: rouge
