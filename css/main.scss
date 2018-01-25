@@ -24,12 +24,10 @@ h1, h2, h3, h4 {
     margin-bottom: 0;
 }
 main a {
-        color: $main-highlight;
-        text-decoration: none;
+        color: $main-dark;
 }
 main a:hover {
-        color: $main-light;
-        text-decoration: underline;
+        color: $main-highlight;
 }
 .page {
     padding-top: 2.5rem;
