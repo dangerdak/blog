@@ -2,7 +2,6 @@
 layout: default
 ---
 <div class="page">
-  {{ content }}
   <ul class="post-list">
   {% for post in site.posts %}
       <li class="post-list__item"><a href="{{ post.url }}">{{ post.title}}</a>
@@ -10,5 +9,6 @@ layout: default
       </li>
   {% endfor %}
   </ul>
-  {% if site.posts.size < 5 %}<p>More posts coming soon...</p>{% endif %}
+  {% if site.posts.size == 0 %}<p>No posts yet!</p>{% endif %}
+  {{ content }}
 </div>
