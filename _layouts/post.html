@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<article class="page">
-  <h1>{{ page.title }}</h1>
-  <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+<article class="page post">
+  <h1 class="post__title">{{ page.title }} </h1>
+ <span class="post__date">{{ page.date | date: "%b %-d, %Y" }}</span> 
   {{ page.content }}
 </article>
