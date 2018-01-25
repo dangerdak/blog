@@ -3,23 +3,23 @@
   <head>
     <title>{{ page.title }} - {{ site.title }}</title>
     <meta name="viewport" content="width=device-width">
-    <link href={{ "/css/main.css" | absolute_url }} rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/025a404d30.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.1.1.min.js"
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
       crossorigin="anonymous"></script>
-    <script src={{ "/main.js" | absolute_url }}></script>
+    <script src="/main.js"></script>
     <link rel="alternate" type="application/rss+xml"  href="{{ site.url }}/feed.xml" title="{{ site.title }}">
   </head>
   <body>
     <header>
       <nav>
         <ul class="navbar nav-main">
-          <li><a class="btn {% if page.url == '/' %}current{% endif %}" href={{ "/" | absolute_url }}>Blog</a></li>
-          <li><a class="btn {% if page.url == '/portfolio.html' %}current{% endif %}" href={{ "/portfolio" | absolute_url }}>Portfolio</a></li>
-          <li><a class="btn {% if page.url == '/about.html' %}current{% endif %}" href={{ "/about" | absolute_url }}>About</a></li>
-          <li><a class="btn {% if page.url == '/contact.html' %}current{% endif %}" href={{ "/contact" | absolute_url }}>Contact</a></li>
+          <li><a class="btn {% if page.url == '/' %}current{% endif %}" href="/" >Blog</a></li>
+          <li><a class="btn {% if page.url == '/portfolio.html' %}current{% endif %}" href="/portfolio">Portfolio</a></li>
+          <li><a class="btn {% if page.url == '/about.html' %}current{% endif %}" href="/about">About</a></li>
+          <li><a class="btn {% if page.url == '/contact.html' %}current{% endif %}" href="/contact">Contact</a></li>
         </ul>
       </nav>
     </header>
