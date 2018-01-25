@@ -1,6 +1,7 @@
 url: localhost:4000
-name: My Jekyll Website
+name: dangerdak
 title: dangerdak.com
+description: My blog and portfolio site: web development, electronics and anything else
 markdown: kramdown
 kramdown:
     input: GFM
