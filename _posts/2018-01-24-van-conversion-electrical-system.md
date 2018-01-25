@@ -77,7 +77,7 @@ go with my 130ah battery.
 
 ## Wiring diagram
 I made a start on drawing out how everything will fit together:
-![electrical system wiring plan]({{ "/img/van-wiring.png" | absolute_url }})
+![electrical system wiring plan]({{ "/img/van-wiring.png" | relative_url }})
 Still need to work out a few details about fuses, wire lengths and gauges and earthing.
 
 ## Fuses and wire sizing
