@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div class="page">
+  <ul class="post-list">
+  {% for post in site.posts %}
+      <li class="post-list__item"><a href="{{ post.url }}">{{ post.title}}</a>
+      <span class="post-list__date">{{ post.date | date: "%b %-d, %Y" }}</span>
+      </li>
+  {% endfor %}
+  </ul>
+  {% if site.posts.size == 0 %}<p>No posts yet!</p>{% endif %}
+  {{ content }}
+</div>

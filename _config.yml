@@ -1,0 +1,10 @@
+url: localhost:4000
+name: dangerdak
+title: dangerdak.com
+description: 'My blog and portfolio site: web development, electronics and anything else'
+markdown: kramdown
+kramdown:
+    input: GFM
+    auto_ids: true
+    hard_wrap: false
+    syntax_highlighter: rouge

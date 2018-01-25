@@ -1,3 +1,6 @@
+---
+---
+
 @import 'normalize';
 @import 'variables';
 
@@ -6,50 +9,36 @@
 *:before {
         box-sizing: border-box;
 }
-h1, h2, p, figure {
-        margin: 0;
-        display: block;
-        width: 100%;
-}
 body {
-        font-family: 'Raleway', sans-serif;
         font-size: 1.2em;
-}
-h1, h2, h3, h4, h5 ,h6 {
-        font-family: 'Playfair Display', serif;
+        position: relative;
+        font-family: -apple-system,BlinkMacSystemFont,SegoeUI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica,Neue,sans-serif;
+        font-weight: 200;
+        min-height:100vh;
 }
 main {
         margin: 0 1em;
+        display: flex;
 }
-section {
-        min-height: 100vh;
-}
-section:last-child {
-        min-height: 50vh;
-}
-h1, h2 {
-        margin-bottom: 1em;
+h1, h2, h3, h4 {
+    margin-bottom: 0;
 }
 main a {
-        color: $main-highlight;
-        text-decoration: none;
+        color: $main-dark;
 }
 main a:hover {
-        color: $main-light;
-        text-decoration: underline;
+        color: $main-highlight;
+}
+.page {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 
 @media all and (min-width: 600px) {
     main {
             margin: 0 3em;
-    }
-    section:first-child {
-        padding-top: 6em;
-    }
-    #about-me {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+            padding-top: 4em;
+            min-height: 100vh;
     }
 }
 
@@ -64,6 +53,7 @@ main a:hover {
 /****** navigation ******/
 header {
         background-color: $background-color;
+        border-bottom: 3px solid $main-highlight;
 }
 .navbar {
         display: flex;
@@ -106,7 +96,6 @@ header {
         header {
                 width: 100%;
                 z-index: 1;
-                border-bottom: 8px solid $main-highlight;
                 transition: all 0.1s;
                 position: fixed;
                 top: 0;
@@ -127,25 +116,41 @@ header {
 }
 
 @media all and (min-width: 960px) {
-        header {
-                height: 6em;
-        }
         .nav-main {
-                justify-content: flex-start;
+                justify-content: space-between;
                 width: 60%;
                 margin: auto;
-                font-weight: bold;
         }
         .nav-bottom {
                 justify-content: flex-end;
         }
         .navbar li {
-                flex: 0 1 auto;
-                max-width: 33%;
+                flex: 1 1 auto;
         }
-        .btn {
-                padding: 2em;
-        }
+}
+
+/****** blog ******/
+.post-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.post-list__item {
+    padding: 1em 0;
+    font-size: 1.5rem;
+}
+.post-list__date {
+    font-size: 0.8em;
+    
+}
+.post__title {
+    margin-top: 0;
+    display: inline;
+}
+.post__date {
+    color: $button-color;
+    display: inline-block;
+    font-size: 0.9em;
 }
 
 /****** about me ******/
@@ -165,7 +170,7 @@ header {
 }
 
 @media all and (min-width: 600px) {
-        #about-me{
+        .about-me {
                 overflow: hidden; /* So parent will grow to fit floated image */
         }
         .portrait {
@@ -178,22 +183,27 @@ header {
 .flex-row {
         display: flex;
         flex-flow: row wrap;
+        justify-content: center;
 }
 .flex-cell {
-        flex: 0 1 auto;
+        flex: 1 1 auto;
 }
 figure {
         width: 100%;
-        min-width: 300px;
-        max-width: 600px;
-        border: 5px solid $info-light;
+        min-width: 250px;
+        max-width: 350px;
+        border: 1px dashed $info-dark;
         position: relative;
         z-index: 0;
-        margin-bottom: 4em;
+        margin: 0.5em;
+        font-size: 1rem;
 }
 figure img {
         width: 90%;
         margin: 5%;
+}
+figure p {
+    margin: 0;
 }
 figcaption {
         background: $background-color;
@@ -203,14 +213,16 @@ figcaption {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 1em;
+        padding: 0.5em 1em;
+        border-top: 1px dashed $info-dark;
 }
 .info {
         line-height: 3em;
-        color: $info-highlight;
+        color: $info-light;
 }
 figcaption i {
         vertical-align: middle;
+        color: $info-dark;
 }
 figcaption i:hover {
         cursor: pointer;
@@ -223,7 +235,7 @@ figcaption i:hover {
         height: 100%;
         background-color: $button-color;
         opacity: 0.95;
-        color: $info-highlight;
+        color: $info-light;
         display: none;
         bottom: 0;
         right: 0;
@@ -234,11 +246,11 @@ figcaption i:hover {
 }
 
 @media all and (min-width: 600px) {
-        .flex-row {
-                justify-content: space-between;
+        .flex-cell {
+                width: 40%;
         }
         .flex-cell {
-                width: 48%;
+                flex: 1 1 auto;
         }
 }
 @media all and (min-width: 960px) {
@@ -246,7 +258,7 @@ figcaption i:hover {
                 justify-content: space-between;
         }
         .flex-cell {
-                width: 48%;
+                width: 30%;
         }
 }
 
@@ -257,14 +269,39 @@ figcaption i:hover {
 }
 
 /****** footer ******/
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+footer .btn {
+    padding: 0.4em;
+}
+.nav-bottom {
+        flex-flow: row wrap;
+        justify-content: center;
+}
+.nav-bottom li {
+        flex: 0 1 auto;
+}
 @media all and (min-width: 600px) {
+    .nav-bottom {
+        justify-content: space-between;
+    }
+    .nav-bottom li {
+            flex: 1 1 auto;
+    }
 }
 @media all and (min-width: 960px) {
-        footer {
-        }
         .nav-bottom {
                 width: 60%;
                 margin: auto;
+        }
+        .nav-bottom {
+            justify-content: flex-end;
+        }
+        .nav-bottom li {
+                flex: 0 1 auto;
         }
 }
 
