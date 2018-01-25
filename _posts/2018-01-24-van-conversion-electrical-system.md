@@ -68,6 +68,7 @@ capacity of your batteries. I'm planning to get either 130W or 150W panels to
 go with my 130ah battery.
 ,
 ## Wiring diagram
+![electrical system wiring plan]({{ "img/van-wiring.png" | absolute_url }})
 
 ## Fuses and wire sizing
 Fuses are there primarily to protect the wires from excessive current, rather than the
