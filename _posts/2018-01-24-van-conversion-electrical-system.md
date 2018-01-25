@@ -3,7 +3,15 @@ title: Van conversion electrical system
 layout: post
 ---
 
-To get started, look at these:
+_This project is currently in the planning stage and is a work in progress - I'll keep
+updating this post as my plan progresses until the system is installed_
+
+Fiddling with wiring in a van is intimidating, but after reading the
+encouraging words of lots of people on the internet, I decided to give it a go. This post
+covers my plan for installing a leisure battery and solar panel system into a Renault
+Trafic 2015 campervan conversion.
+
+To get started, these resources are really useful:
 1. [GnomadHome - Epic Guide to Van Build
 Electrical](https://gnomadhome.com/van-build-solar-electrical-wiring/)
 2. [VanDogTraveller - From Van to Home - Chapter 'Electrical
@@ -19,7 +27,7 @@ Electrical](https://gnomadhome.com/van-build-solar-electrical-wiring/)
 
 ## Sizing the system
 This is hard to do! I tried making a spreadsheet but I'm not sure how helpful
-it was, in the end I decided to just listen to general advice/impressions I got
+it was - there's so much guesswork involved. In the end I decided to just listen to general advice/impressions I got
 from reading around:
 - A 100/110ah battery is reasonable/ seems standard for a smallish system
 - 35ah per day would be very modest usage, 120ah per day would be living like you do at home (remember the battery shouldn't be depleted past 50% and you probably want it to last at least a couple days on a charge)
@@ -51,7 +59,7 @@ approved.
 
 These smart B2B chargers also require an ignition switch feed when used with
 smart alternators, so they know when the engine's running. This can be obtained
-from the car's fusebox, using a piggyback fuse.
+from the car's fusebox, using a piggyback fuse adaptor.
 
 In the 2015 Trafic this is located inside the glove box.
 
@@ -66,17 +74,21 @@ smaller fridges.
 As a rough guide, the wattage of your solar panels should be around the ah
 capacity of your batteries. I'm planning to get either 130W or 150W panels to
 go with my 130ah battery.
-,
+
 ## Wiring diagram
+I made a start on drawing out how everything will fit together:
 ![electrical system wiring plan]({{ "img/van-wiring.png" | absolute_url }})
+Still need to work out a few details about fuses, wire lengths and gauges and earthing.
 
 ## Fuses and wire sizing
 Fuses are there primarily to protect the wires from excessive current, rather than the
 components/appliances. This is because if too much current runs through a wire
 it can cause a fire. So the rating of each fuse should be less
 than what the wire can handle. A voltage drop of 3% is generally considered
-acceptable, which is 0.36V in a 12V system. Here's a tool to help calculate
+acceptable (0.36V in a 12V system). Here's a tool to help calculate
 appropriate [wire sizing](http://www.antares.co.uk/design-tools.html). Remember
-the length includes both the negative and the positive side of a circuit.
+the length includes both the negative and the positive side of the circuit.
 
 ## More details
+### Determining if the van has a smart alternator
+...
