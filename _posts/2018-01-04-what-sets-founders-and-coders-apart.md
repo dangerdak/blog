@@ -36,8 +36,8 @@ top-down.
 
 ## Collaboration
 Collaboration is fundamental to the ethos of FAC, and in my opinion is the best
-thing about it. It's not just the pair-programming, or 
-experiencing working in at least 4 different teams of 4. It's intensely
+thing about it. It's not just the pair-programming, or the experience of
+working in at least 4 different teams of 4. It's intensely
 un-competitive. It's never about who did or understood what first - you're as
 good as your team and your team's as good as your cohort. If you've done
 something you have a responsibilty to help anyone who's struggling. Bring each
