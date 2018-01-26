@@ -13,7 +13,6 @@ body {
         font-size: 1.2em;
         position: relative;
         font-family: -apple-system,BlinkMacSystemFont,SegoeUI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica,Neue,sans-serif;
-        font-weight: 200;
         min-height:100vh;
 }
 main {
@@ -150,6 +149,9 @@ header {
     color: $button-color;
     display: inline-block;
     font-size: 0.9em;
+}
+.post img {
+    max-width: 100%;
 }
 
 /****** about me ******/
