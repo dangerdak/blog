@@ -2,6 +2,7 @@
 ---
 
 @import 'normalize';
+@import 'solarized-light';
 @import 'variables';
 
 *,
@@ -14,6 +15,7 @@ body {
         position: relative;
         font-family: -apple-system,BlinkMacSystemFont,SegoeUI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica,Neue,sans-serif;
         min-height:100vh;
+        color: #2c2c2c;
 }
 main {
         margin: 0 1em;
@@ -26,6 +28,9 @@ main a {
 }
 main a:hover {
         color: $main-highlight;
+}
+code {
+    background-color: #fdf6e3;
 }
 .page {
     padding-top: 2.5rem;
