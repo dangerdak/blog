@@ -52,11 +52,19 @@ code {
                 max-width: 1200px;
         }
 }
-
-/****** navigation ******/
+@media all and (min-width: 960px) {
+}
+/****** header ******/
 header {
         background-color: $background-color;
         border-bottom: 3px solid $main-highlight;
+        position: relative;
+}
+.header__logo {
+        position: absolute;
+}
+.header__logo > img {
+        max-width: 8rem;
 }
 .navbar {
         display: flex;
@@ -81,6 +89,24 @@ header {
 }
 
 @media all and (min-width: 600px) {
+        header {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            z-index: 1;
+            transition: all 0.1s;
+            position: fixed;
+            top: 0;
+            height: 4em;
+        }
+        .header__logo {
+            max-width: 6rem;
+            flex: 0 1 auto;
+            position: static;
+        }
+        nav {
+            width: 80%;
+        }
         .navbar {
                 flex-flow: row wrap;
         }
@@ -95,14 +121,6 @@ header {
         }
         .btn:hover {
                 border-color: $main-light;
-        }
-        header {
-                width: 100%;
-                z-index: 1;
-                transition: all 0.1s;
-                position: fixed;
-                top: 0;
-                height: 4em;
         }
         .nav-reduce {
                 height: 4em;
@@ -119,10 +137,22 @@ header {
 }
 
 @media all and (min-width: 960px) {
+        .header__logo {
+                width: 20%;
+                max-width: 20%;
+                position: absolute;
+        }
+        .header__logo > img {
+                position: absolute;
+                right: -1.5em;
+                max-width: 9rem;
+        }
+        nav {
+                margin: auto;
+                width: 60%;
+        }
         .nav-main {
                 justify-content: space-between;
-                width: 60%;
-                margin: auto;
         }
         .nav-bottom {
                 justify-content: flex-end;

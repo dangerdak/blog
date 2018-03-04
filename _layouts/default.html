@@ -11,9 +11,14 @@
       crossorigin="anonymous"></script>
     <script src="/main.js"></script>
     <link rel="alternate" type="application/rss+xml"  href="{{ site.url }}/feed.xml" title="{{ site.title }}">
+    <link rel="shortcut icon" href="/favicon.png" type="image/png">
+    <link rel="icon" href="/favicon.png" type="image/png">
   </head>
   <body>
     <header>
+        <div class="header__logo">
+          <img src="/img/dangerdak-logo-transparent.png" alt="">
+        </div>
       <nav>
         <ul class="navbar nav-main">
           <li><a class="btn {% if page.url == '/' %}current{% endif %}" href="/" >Blog</a></li>
